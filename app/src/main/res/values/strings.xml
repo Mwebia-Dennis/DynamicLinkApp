@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dynamic Link</string>
+    <string name="get_dynamic_link">Get dynamic link</string>
+    <string name="profile_page">PROFILE PAGE</string>
+    <string name="filter_view_http_penguins">filter_view_http_penguins</string>
+    <string name="filter_view_penguins_profile">filter_view_penguins_profile</string>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "447511277210",
+    "firebase_url": "https://hffworld.firebaseio.com",
+    "project_id": "hffworld",
+    "storage_bucket": "hffworld.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447511277210:android:86943e3c595103c326b923",
+        "android_client_info": {
+          "package_name": "com.penguinstech.dynamiclink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447511277210-7os6jcdibaqmkve7d05elj9thdvmhbc4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.penguinstech.dynamiclink",
+            "certificate_hash": "333ae328481637fe778e53dfe122d9e355037248"
+          }
+        },
+        {
+          "client_id": "447511277210-ab97jkvfq5cge3l1utt860fsnhc77brr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiOgisBPc-mL_O4FJP34IJ4fCiJ-Vwhx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447511277210-ab97jkvfq5cge3l1utt860fsnhc77brr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
