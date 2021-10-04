@@ -60,9 +60,12 @@ public class MainActivity extends AppCompatActivity {
         try {
 
             Log.i("encoded data", getEncodedUser(user));
-            String deepLink = "http://www.penguins.com/profile?user="+getEncodedUser(user);
+            String deepLink = "http://www.penguins.com/profile";
+            //@param redirectLink -> redirect link to your web page
+            //note: @urlparameters -> ?user=getEncodedUser(user) is really important to pass data to web page
             String redirectLink = "http://localhost/web-dev/demo-form/test.php?user="+getEncodedUser(user);
 
+            //generete the dynamic link using firebase
             String link = getLink(deepLink, "com.penguinstech.dynamiclink", redirectLink);
             Log.i("link", link);
             FirebaseDynamicLinks.getInstance().createDynamicLink()
@@ -146,6 +149,8 @@ public class MainActivity extends AppCompatActivity {
     
     private String getEncodedUser(User user) throws JSONException, UnsupportedEncodingException {
 
+        //restructuring user object to match the required api json object
+        //check php file for more info about user json structure
         JSONObject obj,socials;
         obj = new JSONObject();
         socials = new JSONObject();
@@ -172,9 +177,11 @@ public class MainActivity extends AppCompatActivity {
 
         obj.put("socials", socials);
 
+        //base encode the json object
         byte[] encoded = Base64.encode(obj.toString().getBytes("CP1252"), Base64.DEFAULT);
         return new String(encoded, "CP1252");
     }
+
 
 
 }
